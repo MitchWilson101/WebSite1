@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to my Dive Site">
+    <meta name="keywords" content="Dives,Coding,Outdoors, scotland, United Kingdom,">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="CSS/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width 1100px" href="CSS/widescreen.css">
+    <title>Mitch's Dive | Outdoor Site</title>
+</head>
+<body id="home">
+    <!-- Navbar  -->
+    <nav id="navbar" >
+        <h1 class="logo">
+            <span class="text-primary">
+                <i class="fas fa-code"></i> Mitch's
+            </span>Diving/Hiking/Coding Site
+        </h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what">About</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#clients">Weather</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Showcase -->
+    <header id="showcase">
+
+        <div class="showcase-content">
+            <h1 class="l-heading">The Great Indoors & Outdoors</h1>
+            <p>Welcome to my site. My site is going to freature Diving, Hiking, and Coding. Hopefully I will get to show you my progress in all three areas. </p>
+            <a href="./ApiGetter/nasaIndex.html" class="btn">Daily NASA Pix</a>
+        </div>
+    </header>
+
+    <!-- About me and the site -->
+    <section id="what" class="bg-light py-1">
+            <div class="container">
+                <h2 class="m-heading text-center"><span class="text-primary">About</span> this site</h2>
+                <div class="items">
+                    <div class="item">
+                     <img id="sd-img" src="../img/scubadiver.png" alt="">
+                     
+                     <div>
+                         <h3>Diving</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quisquam!</p>
+                     </div>
+                    </div>
+                    <div class="item">
+                            <i class="fas fa-hiking fa-2x"></i>
+                            <div>
+                                <h3>Hiking</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quisquam!</p>
+                            </div>
+                    </div>
+                    <div class="item"><i class="fas fa-code fa-2x"></i>
+                        <div>
+                            <h3>Coding</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quisquam!</p>
+                        </div></div>
+                </div>
+            </div>
+    
+        </section>
+    <!-- Section who we are  -->
+    <section id="who">
+        <div class="who-img"></div>
+        <div class="who-text bg-dark p-2">
+            <h2 class="m-heading"><span class="text-primary">Who</span> I am</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo modi, fugiat temporibus aperiam earum, commodi unde perferendis a aspernatur, error suscipit libero dolorum placeat iste nisi. Eligendi, libero molestias.
+            </p>
+            <h3>List of something to go here.</h3>
+            <ul class="list">
+                <li>dive shop</li>
+                <li>Hiking shop</li>
+                <li>Favourite hills</li>
+                <li>places I like </li>
+                <li>another thing</li>
+            </ul>
+        </div>
+ 
+     </section>
+     <!-- section clients  -->
+     <section id="clients" class="py-1">
+       <div class="container">
+
+        <h2 class="m-heading text-center">
+            <span class="text-primary">Weather</span>
+        </h2>
+        <div class="items">
+            <iframe class="w-map" src="./WeatherJSComplete/index.html" frameborder="0"></iframe>
+            <!-- <div><img src="./img/cherrio.jpg" alt=""></div>
+            <div><img src="./img/lochMorlich.jpg" alt=""></div>
+            <div><img src="./img/EgyptJumping.jpg" alt=""></div>
+            <div><img src="./img/OpenWater.jpg" alt=""></div>
+            <div><img src="./img/EgyptTryDive.jpg" alt=""></div> -->
+        </div>
+       </div>
+
+     </section>
+  <!-- Section contact -->
+  <section id="contact">
+    <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact us</h2>
+        <p>Please use the form below to contact me</p>
+     <form action="process.php" method="POST" >
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="enter name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="enter email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="enter phone number ">
+        </div>
+        <div class="form-group">
+            <label for="message">message</label>
+            <textarea type="text" name="message" id="message" placeholder="enter message"></textarea>
+        </div>
+          <input type="submit" value="send" class="btn btn-dark">
+     </form>
+     
+
+    </div>
+    <div class="map"></div>
+  </section>
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+    <p>Copyright &copy; 2019, The Great Indoors and Outdoors, All Rights Reserved</p>
+   </div>
+</footer>
+<!-- JQuery CDN -->
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<!-- Local js -->
+<script src="./JS/main.js"></script>
+
+<!-- Google maps  -->
+<!-- AIzaSyCWfmjuowV0byKhLIuwfd1awRRtUYsmvN8 -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfmjuowV0byKhLIuwfd1awRRtUYsmvN8&callback=initMap"
+async defer></script>
+</body>
+</html>
